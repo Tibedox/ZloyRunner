@@ -27,11 +27,11 @@ public class Man {
             if (condition==GO) if (++faza == 20) faza = 0;
             if (condition==JUMP_UP){
                 faza=0;
-                y += 10;
+                y += 10/5;
                 if(y > MyGame.SCR_HEIGHT/1.8f) condition = JUMP_DOWN;
             }
             if (condition==JUMP_DOWN){
-                y -= 10;
+                y -= 10/5;
                 if(y <= MyGame.SCR_HEIGHT/5) condition = GO;
             }
             if (condition==FAIL){
